@@ -14,6 +14,7 @@ namespace CSharpEgitimKampi301.EntityLayer.Concrete
         public string CustomerCity { get; set; }
         public string CustomerMail { get; set; }
         public virtual List<Order> Orders { get; set; } // Navigation Property
+        public bool CustomerStatus { get; set; }
 
     }
 }
