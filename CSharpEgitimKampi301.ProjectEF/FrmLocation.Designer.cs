@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnGetById = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -46,20 +45,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.comboGuide = new System.Windows.Forms.ComboBox();
             this.nudCapacity = new System.Windows.Forms.NumericUpDown();
+            this.btnGetById = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCapacity)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnGetById
-            // 
-            this.btnGetById.BackColor = System.Drawing.Color.Turquoise;
-            this.btnGetById.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGetById.Location = new System.Drawing.Point(30, 372);
-            this.btnGetById.Name = "btnGetById";
-            this.btnGetById.Size = new System.Drawing.Size(306, 45);
-            this.btnGetById.TabIndex = 23;
-            this.btnGetById.Text = "Id\'ye Göre Getir";
-            this.btnGetById.UseVisualStyleBackColor = false;
             // 
             // btnUpdate
             // 
@@ -71,6 +60,7 @@
             this.btnUpdate.TabIndex = 22;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnRemove
             // 
@@ -82,6 +72,7 @@
             this.btnRemove.TabIndex = 21;
             this.btnRemove.Text = "Sil";
             this.btnRemove.UseVisualStyleBackColor = false;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnAdd
             // 
@@ -93,6 +84,7 @@
             this.btnAdd.TabIndex = 20;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // textCountry
             // 
@@ -224,6 +216,18 @@
             0,
             0});
             // 
+            // btnGetById
+            // 
+            this.btnGetById.BackColor = System.Drawing.Color.Turquoise;
+            this.btnGetById.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGetById.Location = new System.Drawing.Point(30, 372);
+            this.btnGetById.Name = "btnGetById";
+            this.btnGetById.Size = new System.Drawing.Size(306, 45);
+            this.btnGetById.TabIndex = 23;
+            this.btnGetById.Text = "Id\'ye Göre Getir";
+            this.btnGetById.UseVisualStyleBackColor = false;
+            this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
+            // 
             // FrmLocation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -249,6 +253,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmLocation";
             this.Text = "FrmLocation";
+            this.Load += new System.EventHandler(this.FrmLocation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCapacity)).EndInit();
             this.ResumeLayout(false);
@@ -257,8 +262,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnGetById;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnAdd;
@@ -276,5 +279,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboGuide;
         private System.Windows.Forms.NumericUpDown nudCapacity;
+        private System.Windows.Forms.Button btnGetById;
     }
 }
