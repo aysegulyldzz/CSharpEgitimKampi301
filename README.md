@@ -1,6 +1,6 @@
 # 🗺️ Seyahat İstatistik Paneli  
 
-Bu proje, **Murat Yücedağ’ın C# Eğitim Kampı** kapsamında geliştirilmiştir. Çalışmada, **Entity Framework** kullanılarak bir seyahat veri tabanındaki bilgilerin sorgulanması ve **Windows Forms** arayüzünde istatistiksel bir panel aracılığıyla görselleştirilmesi amaçlanmıştır.
+Bu repo Murat Yücedağ’ın eğitmenliğinde gerçekleştirilen C# Eğitim Kampı süresince tamamlanan projeleri içermektedir. Seyahat İstatistik Paneli adlı çalışmada, **Entity Framework** kullanılarak bir seyahat veri tabanındaki bilgilerin sorgulanması ve **Windows Forms** arayüzünde istatistiksel bir panel aracılığıyla görselleştirilmesi amaçlanmıştır.
 
 <img width="1015" height="478" alt="Tur_Project" src="https://github.com/user-attachments/assets/53db3a61-8e1a-4f7a-a69b-e30759f007dd" />
 
